@@ -25,8 +25,17 @@ $(function() {
         customPaging : function(slider, i) {
             return '<a class="slider-dots__dot"></a>';
         },
-    })
+        fade:true,
+        pauseOnFocus:false,
+        pauseOnHover:false,
+    });
 
+
+    //анимация на скролл
+    new WOW().init();
+
+    // паралакс
+    $(window).stellar();
 
 
 });
