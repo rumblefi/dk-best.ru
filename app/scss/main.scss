@@ -178,3 +178,117 @@ p{
 }
 
 
+.main-nav{
+	background-color: #000;
+	&__list{
+		display: flex;
+		margin: 0;
+		//стили для плагина superfish
+		&.sf-menu{
+			ul{
+				width: 270px;
+				padding: 30px 0 0 0;
+				border: 1px solid #d9d9d9;
+				box-shadow: none;
+				li{
+					margin: 0 0 17px 0;
+					padding: 0 0 16px 0;
+					display: block;
+					padding-left: 30px;
+					border-bottom: 1px solid #d9d9d9;
+					&:before{
+						display: none;
+					}
+					&:last-child{
+						border-bottom: none;
+						padding-bottom: 0;
+					}
+					a{
+						text-transform: none;
+						font-size: 15px;
+						color: $color-heading--black;
+						transition: .25s;
+						padding-left: 0;
+						padding-top: 0;
+						padding-bottom: 0;
+						font-weight: normal;
+						&:hover{
+							color: $accent;
+							&.sf-with-ul{
+								&::after{
+									border-left-color: $accent;
+								}
+							}
+						}
+						&.sf-with-ul{
+							&::after{
+								border-top-color: none;
+								border-left-color: $color-heading--black;
+							}
+						}
+					}
+				}
+			}
+		}
+		li{
+			font-size: 19px;
+			text-transform: uppercase;
+			font-weight: bold;
+			transition: all .25s;
+			margin-right: 45px;
+			background: none !important;
+			&.is-active{
+				&:before,
+				&:after{
+					display: block;
+				}
+			}
+			&.sfHover {
+				&:before{
+					display: none !important;
+				}
+			}
+			&:before{
+				position: absolute;
+				left: 0;
+				bottom: -6px;
+				width: 100%;
+				height: 7px;
+				background: url('../img/tr.png') center bottom no-repeat;
+				content: '';
+				display: none;
+				transition: all 0.25s;
+			}
+			&:after{
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 100%;
+				height: 10px;
+				background: $accent;
+				content: '';
+				display: none;
+				transition: all 0.25s;
+			}
+			&:last-child{
+				margin-right: 0;
+			}
+			a{
+				display: block;
+				padding: 29px 0;
+				color: #ffffff;
+				border: none;
+				&.sf-with-ul{
+					&::after{
+						border-top-color: #ffffff;
+					}
+				}
+			}
+		}
+
+	}
+}
+
+
+
+

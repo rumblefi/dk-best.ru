@@ -2,17 +2,19 @@ $(function() {
 
 	// Custom JS
 
-	$(".main-nav__list").on('mouseenter', 'li', function(event) {
-		$(this).addClass('is-active').siblings().not(':first-child').removeClass('is-active');	
-	});
+    //выпадающие дропы в меню
+    jQuery('ul.sf-menu').superfish({
+        delay:       0,                            // one second delay on mouseout
+        animation:   {opacity:'show',height:'show'},  // fade-in and slide-down animation
+        speed:       'fast',                          // faster animation speed
+        autoArrows:  false                            // disable generation of arrow mark-up
+    });
 
-	$(".js-slider").slick({
-		arrows:false,
-		dots:true,
-        customPaging : function(slider, i) {
-            return '<a href="javascript:void(0);" class="slider-dot"></a>';
-        },
-		appendDots:'.slider-dots-wrapper',
-	});
+    $(".main-nav__list > li:not(':first-child')").on("mouseenter", function () {
+       $(this).addClass('is-active');
+    }).on("mouseleave", function () {
+        $(this).removeClass('is-active');
+    });
+
 
 });
