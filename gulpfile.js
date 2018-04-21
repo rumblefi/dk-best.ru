@@ -1,3 +1,4 @@
+
 var syntax        = 'scss'; // Syntax: sass or scss;
 
 var gulp          = require('gulp'),
@@ -37,6 +38,7 @@ gulp.task('styles', function() {
 gulp.task('js', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
+		'app/libs/slick-carousel/slick/slick.min.js', // Always at the end
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
