@@ -10,11 +10,23 @@ $(function() {
         autoArrows:  false                            // disable generation of arrow mark-up
     });
 
+    //для первого
     $(".main-nav__list > li:not(':first-child')").on("mouseenter", function () {
        $(this).addClass('is-active');
     }).on("mouseleave", function () {
         $(this).removeClass('is-active');
     });
+
+    //слайдер на главной
+    $(".js-slider").slick({
+        arrows:false,
+        dots:true,
+        appendDots:'.slider-dots .row',
+        customPaging : function(slider, i) {
+            return '<a class="slider-dots__dot"></a>';
+        },
+    })
+
 
 
 });
