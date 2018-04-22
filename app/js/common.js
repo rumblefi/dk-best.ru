@@ -35,7 +35,6 @@ $(function() {
     new WOW().init();
 
     // паралакс
-    $(window).stellar();
 
 
 });

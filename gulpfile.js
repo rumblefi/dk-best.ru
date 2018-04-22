@@ -41,7 +41,7 @@ gulp.task('js', function() {
 		'app/libs/superfish/dist/js/superfish.js',
 		'app/libs/wow/dist/wow.js',
 		'app/libs/slick-carousel/slick/slick.js',
-		'app/libs/jquery.stellar/src/jquery.stellar.js ',
+		'app/libs/parallax.js/parallax.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
