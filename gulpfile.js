@@ -40,8 +40,10 @@ gulp.task('js', function() {
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/superfish/dist/js/superfish.js',
 		'app/libs/wow/dist/wow.js',
-		'app/libs/slick-carousel/slick/slick.js',
 		'app/libs/parallax.js/parallax.js',
+		'app/libs/jquery.easing/jquery.easing.js',
+		'app/libs/owl.carousel/owl.carousel.js',
+		'app/libs/infiniteslidev2-master/infiniteslidev2.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
