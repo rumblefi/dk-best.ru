@@ -106,6 +106,7 @@ h2{
 .header-top-menu{
 	@media (max-width: 992px) {
 		margin-bottom: 15px;
+		text-align: center;
 	}
 	&__title{
 		text-transform: uppercase;
@@ -125,8 +126,10 @@ h2{
 		font-size: 43px;
 		margin-bottom: 10px;
 		position: relative;
-		padding-left: 40px;
 		line-height: 43px;
+		@media (max-width: 992px) {
+			justify-content: center;
+		}
 		@media (max-width: 420px) {
 			font-size: 35px;
 		}
@@ -149,7 +152,9 @@ h2{
 	&__descr{
 		padding-left: 40px;
 		font-size: 15px;
-		text-align-last: center;
+		@media (max-width: 992px) {
+			padding-left: 0;
+		}
 	}
 }
 
@@ -291,11 +296,26 @@ h2{
 
 
 .main-nav{
+	position: relative;
+	&__list-wrapper{
+		@media (max-width: 992px) {
+			display: none;
+			position: absolute;
+			background-color: #E5332E;
+			left: 0;
+			width: 100%;
+			top: 100%;
+			z-index: 9999;
+		}
+	}
 	&__list{
 		display: flex;
 		margin: 0;
 		@media (max-width: 992px) {
-			display: none;
+			flex-direction: column;
+			padding-top: 30px;
+			padding-bottom: 50px;
+			width: 100%;
 		}
 		//стили для плагина superfish
 		&.sf-menu{
@@ -305,14 +325,35 @@ h2{
 				border: 1px solid #d9d9d9;
 				box-shadow: none;
 				background-color: #fff;
+				@media (max-width: 992px) {
+					position: static;
+					width: 100%;
+					background-color: #E5332E;
+					border: none;
+					padding-left: 30px;
+					padding-top: 0;
+				}
 				li{
 					margin: 0 0 17px 0;
 					padding: 0 0 16px 0;
 					display: block;
 					padding-left: 30px;
 					border-bottom: 1px solid #d9d9d9;
+					font-weight: normal;
+					@media (max-width: 992px) {
+						margin: 0;
+						padding: 0;
+						padding-left: 15px;
+					}
 					&:before{
 						display: none;
+					}
+					&:first-child {
+						a{
+							@media (max-width: 992px) {
+								padding-top: 0;
+							}
+						}
 					}
 					&:last-child{
 						border-bottom: none;
@@ -326,10 +367,17 @@ h2{
 						padding-top: 0;
 						padding-bottom: 0;
 						font-weight: normal;
+						display: block;
+						@media (max-width: 992px) {
+							padding: 13px 0;
+						}
 						&.sf-with-ul{
 							&::after{
 								border-top-color: transparent;
 								border-left-color: #FC5A0A;
+								@media (max-width: 992px) {
+									border-left-color: #ffffff;
+								}
 							}
 						}
 					}
@@ -343,6 +391,10 @@ h2{
 			transition: all .25s;
 			margin-right: 45px;
 			background: none !important;
+			@media (max-width: 992px) {
+				margin-right: 0;
+				border-bottom: 1px solid #ffffff;
+			}
 			&.is-active{
 				&:before,
 				&:after{
@@ -365,6 +417,9 @@ h2{
 				content: '';
 				display: none;
 				transition: all 0.25s;
+				@media (max-width: 992px) {
+					display: none !important;
+				}
 			}
 			&:after{
 				position: absolute;
@@ -377,6 +432,9 @@ h2{
 				content: '';
 				display: none;
 				transition: all 0.25s;
+				@media (max-width: 992px) {
+					display: none !important;
+				}
 			}
 			&:last-child{
 				margin-right: 0;
@@ -386,7 +444,16 @@ h2{
 				padding: 29px 0;
 				color: #FC5A0A;
 				border: none;
+				@media (max-width: 992px) {
+					color: #ffffff;
+					padding: 13px 0;
+					padding-left: 30px;
+					font-weight: normal;
+				}
 				&.sf-with-ul{
+					@media (max-width: 992px) {
+						padding-right: 0;
+					}
 					&::after{
 						border-top-color: currentColor;
 					}
@@ -656,11 +723,11 @@ h2{
 
 #owl-main {
 	.item {
-		height: 580px;
+		min-height: 580px;
 		background-color: #FFF;
 		background-size: cover;
 		@media (max-width: 992px) {
-			height: 620px;
+			min-height: 620px;
 		}
 	}
 	.container {
@@ -1122,7 +1189,7 @@ h3{
 
 .burger {
 	$toggler-part-height: 4px;
-	$toggler-part-bg-color: #FC5A0A;
+	$toggler-part-bg-color: #B78259;
 	display: none;
 	position: relative;
 	z-index: 10;

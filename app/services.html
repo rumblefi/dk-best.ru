@@ -28,6 +28,7 @@
 
 <body>
 
+<!--ВЕРХНЯЯ ШАПКА : ЛОГО, ТЕЛЕФОН, КНОПКА CALLTO-ACTION-->
 <header class="header">
     <div class="header-top">
         <div class="container">
@@ -35,7 +36,7 @@
                 <a href="index.html" class="logo wow fadeInDown animated"">
                 <img src="img/logo.jpg" alt="">
                 </a>
-                <div class="header-top-menu">
+                <div class="header-top-menu  wow fadeInDown animated">
                     <div class="header-top-menu__title">нужна помощь?</div>
                     <a href="tel:800-2345-6789" class="header-top-menu__phone">
                         <span>800-2345-6789</span>
@@ -45,43 +46,49 @@
                         06:00-16:00 каждый день без выходных
                     </div>
                 </div>
-                <button class="callToAction-btn">заказать</button>
+                <button class="callToAction-btn wow fadeInRight animated">заказать</button>
             </div>
         </div>
     </div>
 </header>
+<!--END:   ВЕРХНЯЯ ШАПКА : ЛОГО, ТЕЛЕФОН, КНОПКА CALLTO-ACTION-->
 
+<!--ГЛАВНОЕ МЕНЮ -->
 <nav class="main-nav">
     <div class="container">
         <div class="row">
-            <ul class="main-nav__list sf-menu sf-js-enabled sf-arrows">
-                <li class="is-active"><a href="index.html">главная</a></li>
-                <li class="sub-menu">
-                    <a href="about.html" class="sf-with-ul">о нас</a>
-                    <ul class="submenu sub-menu" >
-                        <li><a href="#">Lorem ipsum</a></li>
-                        <li class=""><a href="#" class="sf-with-ul">Dolor sit amet</a>
-                            <ul class="submenu sub-menu" style="display: none;">
-                                <li><a href="#">Dolore ipsu</a></li>
-                                <li><a href="#">Consecte</a></li>
-                                <li><a href="#">Elit Conseq</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Conse ctetur</a></li>
-                    </ul>
-                </li>
-                <li><a href="services.html">товары и услуги</a></li>
-                <li><a href="galery.html">галерея</a></li>
-                <li><a href="contacts.html">контакты</a></li>
-            </ul>
+            <div class="main-nav__list-wrapper">
+                <ul class="main-nav__list sf-menu sf-js-enabled sf-arrows">
+                    <li class="is-active"><a href="index.html">главная</a></li>
+                    <li class="sub-menu">
+                        <a href="about.html" class="sf-with-ul">о нас</a>
+                        <ul class="submenu sub-menu" >
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li class=""><a href="#" class="sf-with-ul">Dolor sit amet</a>
+                                <ul class="submenu sub-menu" style="display: none;">
+                                    <li><a href="#">Dolore ipsu</a></li>
+                                    <li><a href="#">Consecte</a></li>
+                                    <li><a href="#">Elit Conseq</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Conse ctetur</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="services.html">товары и услуги</a></li>
+                    <li><a href="galery.html">галерея</a></li>
+                    <li><a href="contacts.html">контакты</a></li>
+                </ul>
+            </div>
+            <button class="burger"><span></span></button>
         </div>
     </div>
 </nav>
+<!--END: ГЛАВНОЕ МЕНЮ -->
 
 
 <div class="service-categories">
     <div class="container">
-        <h2 class="heading wow fadeIn animated"><strong>Service</strong> Categories</h2>
+        <h2 class="heading wow fadeInUp animated"><strong>Service</strong> Categories</h2>
         <div class="row">
             <div class="col-lg-6 col-md-6  wow box fadeInUp maxheight animated" ><div class="box_inner">
                 <h3>Design Engineering Services</h3>
@@ -120,6 +127,7 @@
 </div>
 
 
+
 <section class="paralax-section paralax-section--products" data-parallax="scroll" data-image-src="img/bg_pic.jpg" >
     <div class="container">
         <div class="row">
@@ -147,6 +155,8 @@
         </div>
     </div>
 </section>
+
+
 
 <div class="products">
     <div class="container">
@@ -182,10 +192,11 @@
 
 
 
+
 <section class="paralax-section paralax-section--products " data-parallax="scroll" data-image-src="img/bg_pic1.jpg" >
     <div class="container">
         <div class="row">
-            <div class="page-box page-box--large wow fadeInRight animated">
+            <div class="page-box page-box--large wow fadeInLeft animated">
                 <h2 class="heading">OUR FULL SUITE OF SERVICES INCLUDES:</h2>
                 <div class="row">
                     <div class="col-md-6">
@@ -209,6 +220,7 @@
         </div>
     </div>
 </section>
+
 
 
 <footer class="footer">

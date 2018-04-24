@@ -28,6 +28,7 @@
 
 <body>
 
+<!--ВЕРХНЯЯ ШАПКА : ЛОГО, ТЕЛЕФОН, КНОПКА CALLTO-ACTION-->
 <header class="header">
     <div class="header-top">
         <div class="container">
@@ -35,7 +36,7 @@
                 <a href="index.html" class="logo wow fadeInDown animated"">
                 <img src="img/logo.jpg" alt="">
                 </a>
-                <div class="header-top-menu">
+                <div class="header-top-menu  wow fadeInDown animated">
                     <div class="header-top-menu__title">нужна помощь?</div>
                     <a href="tel:800-2345-6789" class="header-top-menu__phone">
                         <span>800-2345-6789</span>
@@ -45,43 +46,49 @@
                         06:00-16:00 каждый день без выходных
                     </div>
                 </div>
-                <button class="callToAction-btn">заказать</button>
+                <button class="callToAction-btn wow fadeInRight animated">заказать</button>
             </div>
         </div>
     </div>
 </header>
+<!--END:   ВЕРХНЯЯ ШАПКА : ЛОГО, ТЕЛЕФОН, КНОПКА CALLTO-ACTION-->
 
+<!--ГЛАВНОЕ МЕНЮ -->
 <nav class="main-nav">
     <div class="container">
         <div class="row">
-            <ul class="main-nav__list sf-menu sf-js-enabled sf-arrows">
-                <li class="is-active"><a href="index.html">главная</a></li>
-                <li class="sub-menu">
-                    <a href="about.html" class="sf-with-ul">о нас</a>
-                    <ul class="submenu sub-menu" >
-                        <li><a href="#">Lorem ipsum</a></li>
-                        <li class=""><a href="#" class="sf-with-ul">Dolor sit amet</a>
-                            <ul class="submenu sub-menu" style="display: none;">
-                                <li><a href="#">Dolore ipsu</a></li>
-                                <li><a href="#">Consecte</a></li>
-                                <li><a href="#">Elit Conseq</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Conse ctetur</a></li>
-                    </ul>
-                </li>
-                <li><a href="services.html">товары и услуги</a></li>
-                <li><a href="galery.html">галерея</a></li>
-                <li><a href="contacts.html">контакты</a></li>
-            </ul>
+            <div class="main-nav__list-wrapper">
+                <ul class="main-nav__list sf-menu sf-js-enabled sf-arrows">
+                    <li class="is-active"><a href="index.html">главная</a></li>
+                    <li class="sub-menu">
+                        <a href="about.html" class="sf-with-ul">о нас</a>
+                        <ul class="submenu sub-menu" >
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li class=""><a href="#" class="sf-with-ul">Dolor sit amet</a>
+                                <ul class="submenu sub-menu" style="display: none;">
+                                    <li><a href="#">Dolore ipsu</a></li>
+                                    <li><a href="#">Consecte</a></li>
+                                    <li><a href="#">Elit Conseq</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Conse ctetur</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="services.html">товары и услуги</a></li>
+                    <li><a href="galery.html">галерея</a></li>
+                    <li><a href="contacts.html">контакты</a></li>
+                </ul>
+            </div>
+            <button class="burger"><span></span></button>
         </div>
     </div>
 </nav>
+<!--END: ГЛАВНОЕ МЕНЮ -->
 
 
 <div class="galery">
     <div class="container">
-        <h2 class="wow fadeIn animated heading"><strong>Project</strong> Gallery</h2>
+        <h2 class="wow fadeInUp animated heading"><strong>Project</strong> Gallery</h2>
         <div class="row">
             <div class="col-lg-4 col-md-6 wow fadeInUp animated" data-wow-delay="0.2s" >
                 <div class="thumbnail-wrap">
@@ -187,19 +194,20 @@
 </div>
 
 
+
 <section class="paralax-section paralax-section--galery" data-parallax="scroll" data-image-src="img/bg_pic.jpg" >
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
-                <div class="page-box page-box--galery">
+                <div class="page-box page-box--galery wow fadeInLeft animated">
                     <p class="title title--galery">presentation</p>
                     <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mollis nibh ac lectus bibendum, in aliquet tortor luctus. Morbi ut libero eget sem gravida condimentum. Maecenas semper sagittis purus, senectus et netus et malesuada fames ac turpis egestas. Morbi posuere diam auctor tellus dictum interdum. Donec faucibus a felis ut porta. Nulla facilisi. Donec diam quam, aliquet in commodo a.</p>
                     <a href="#" class="more fa fa-angle-right"></a>
                 </div>
             </div>
             <div class="col-lg-6">
-                <div class="page-box page-box--galery">
-                    <p class="title title--galery">presentation</p>
+                <div class="page-box page-box--galery wow fadeInRight animated">
+                    <p class="title">presentation</p>
                     <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mollis nibh ac lectus bibendum, in aliquet tortor luctus. Morbi ut libero eget sem gravida condimentum. Maecenas semper sagittis purus, senectus et netus et malesuada fames ac turpis egestas. Morbi posuere diam auctor tellus dictum interdum. Donec faucibus a felis ut porta. Nulla facilisi. Donec diam quam, aliquet in commodo a.</p>
                     <a href="#" class="more fa fa-angle-right"></a>
                 </div>
@@ -207,6 +215,8 @@
         </div>
     </div>
 </section>
+
+
 
 <footer class="footer">
     <div class="footer-top">
@@ -247,6 +257,8 @@
         </div>
     </div>
 </footer>
+
+
 
 <button id="toTop">
     <i class="fa fa-chevron-up" aria-hidden="true"></i>

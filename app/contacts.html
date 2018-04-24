@@ -28,6 +28,7 @@
 
 <body>
 
+<!--ВЕРХНЯЯ ШАПКА : ЛОГО, ТЕЛЕФОН, КНОПКА CALLTO-ACTION-->
 <header class="header">
     <div class="header-top">
         <div class="container">
@@ -35,7 +36,7 @@
                 <a href="index.html" class="logo wow fadeInDown animated"">
                 <img src="img/logo.jpg" alt="">
                 </a>
-                <div class="header-top-menu">
+                <div class="header-top-menu  wow fadeInDown animated">
                     <div class="header-top-menu__title">нужна помощь?</div>
                     <a href="tel:800-2345-6789" class="header-top-menu__phone">
                         <span>800-2345-6789</span>
@@ -45,46 +46,52 @@
                         06:00-16:00 каждый день без выходных
                     </div>
                 </div>
-                <button class="callToAction-btn">заказать</button>
+                <button class="callToAction-btn wow fadeInRight animated">заказать</button>
             </div>
         </div>
     </div>
 </header>
+<!--END:   ВЕРХНЯЯ ШАПКА : ЛОГО, ТЕЛЕФОН, КНОПКА CALLTO-ACTION-->
 
+<!--ГЛАВНОЕ МЕНЮ -->
 <nav class="main-nav">
     <div class="container">
         <div class="row">
-            <ul class="main-nav__list sf-menu sf-js-enabled sf-arrows">
-                <li class="is-active"><a href="index.html">главная</a></li>
-                <li class="sub-menu">
-                    <a href="about.html" class="sf-with-ul">о нас</a>
-                    <ul class="submenu sub-menu" >
-                        <li><a href="#">Lorem ipsum</a></li>
-                        <li class=""><a href="#" class="sf-with-ul">Dolor sit amet</a>
-                            <ul class="submenu sub-menu" style="display: none;">
-                                <li><a href="#">Dolore ipsu</a></li>
-                                <li><a href="#">Consecte</a></li>
-                                <li><a href="#">Elit Conseq</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Conse ctetur</a></li>
-                    </ul>
-                </li>
-                <li><a href="services.html">товары и услуги</a></li>
-                <li><a href="galery.html">галерея</a></li>
-                <li><a href="contacts.html">контакты</a></li>
-            </ul>
+            <div class="main-nav__list-wrapper">
+                <ul class="main-nav__list sf-menu sf-js-enabled sf-arrows">
+                    <li class="is-active"><a href="index.html">главная</a></li>
+                    <li class="sub-menu">
+                        <a href="about.html" class="sf-with-ul">о нас</a>
+                        <ul class="submenu sub-menu" >
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li class=""><a href="#" class="sf-with-ul">Dolor sit amet</a>
+                                <ul class="submenu sub-menu" style="display: none;">
+                                    <li><a href="#">Dolore ipsu</a></li>
+                                    <li><a href="#">Consecte</a></li>
+                                    <li><a href="#">Elit Conseq</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Conse ctetur</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="services.html">товары и услуги</a></li>
+                    <li><a href="galery.html">галерея</a></li>
+                    <li><a href="contacts.html">контакты</a></li>
+                </ul>
+            </div>
+            <button class="burger"><span></span></button>
         </div>
     </div>
 </nav>
+<!--END: ГЛАВНОЕ МЕНЮ -->
 
 
 <div class="thumb-box16">
     <div class="container">
-        <h2 class="heading wow fadeIn animated"><strong>contact</strong> form</h2>
+        <h2 class="heading wow fadeInUp animated"><strong>contact</strong> form</h2>
 
         <div class="row">
-            <form  class="contact-form" id="contact-form">
+            <form  class="contact-form wow fadeInUp animated" id="contact-form">
                 <!-- Hidden Required Fields -->
                 <input type="hidden" name="project_name" value="Site Name">
                 <input type="hidden" name="admin_email" value="admin@mail.com">

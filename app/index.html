@@ -1,59 +1,37 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
-
-	<meta charset="utf-8">
-	
-
-	<title>DK-BEST</title>
-	<meta name="description" content="">
-
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	
-	<!-- Template Basic Images Start -->
-	<meta property="og:image" content="path/to/image.jpg">
-	<link rel="icon" href="img/favicon/favicon.ico">
-	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
-	<!-- Template Basic Images End -->
-	
-	<!-- Custom Browsers Color Start -->
-	<meta name="theme-color" content="#000">
-	<!-- Custom Browsers Color End -->
-
-	<link rel="stylesheet" href="css/main.min.css">
-
-</head>
-
 <body>
-
-	<header class="header">
-		<div class="header-top">
-			<div class="container">
-				<div class="row">
-					<a href="index.html" class="logo wow fadeInDown animated"">
-						<img src="img/logo.jpg" alt="">
-					</a>
-					<div class="header-top-menu">
-						<div class="header-top-menu__title">нужна помощь?</div>
-						<a href="tel:800-2345-6789" class="header-top-menu__phone">
-							<span>800-2345-6789</span>
-						</a>
-						<div class="header-top-menu__descr">
-							<span>Часы:</span>
-							06:00-16:00 каждый день без выходных
-						</div>
-					</div>
-					<button class="callToAction-btn">заказать</button>
-				</div>
-			</div>
-		</div>
-	</header>
-
-	<nav class="main-nav">
+<!--ВЕРХНЯЯ ШАПКА : ЛОГО, ТЕЛЕФОН, КНОПКА CALLTO-ACTION-->
+<header class="header">
+	<div class="header-top">
 		<div class="container">
 			<div class="row">
+				<a href="index.html" class="logo wow fadeInDown animated"">
+				<img src="img/logo.jpg" alt="">
+				</a>
+				<div class="header-top-menu  wow fadeInDown animated">
+					<div class="header-top-menu__title">нужна помощь?</div>
+					<a href="tel:800-2345-6789" class="header-top-menu__phone">
+						<span>800-2345-6789</span>
+					</a>
+					<div class="header-top-menu__descr">
+						<span>Часы:</span>
+						06:00-16:00 каждый день без выходных
+					</div>
+				</div>
+				<button class="callToAction-btn wow fadeInRight animated">заказать</button>
+			</div>
+		</div>
+	</div>
+</header>
+<!--END:   ВЕРХНЯЯ ШАПКА : ЛОГО, ТЕЛЕФОН, КНОПКА CALLTO-ACTION-->
+
+<!--ГЛАВНОЕ МЕНЮ -->
+<nav class="main-nav">
+	<div class="container">
+		<div class="row">
+			<div class="main-nav__list-wrapper">
 				<ul class="main-nav__list sf-menu sf-js-enabled sf-arrows">
 					<li class="is-active"><a href="index.html">главная</a></li>
 					<li class="sub-menu">
@@ -74,240 +52,200 @@
 					<li><a href="galery.html">галерея</a></li>
 					<li><a href="contacts.html">контакты</a></li>
 				</ul>
-				<button class="burger"><span></span></button>
 			</div>
+			<button class="burger"><span></span></button>
 		</div>
-	</nav>
-	<section id="mainSlider">
-		<div id="owl-main" class="owl-carousel  owl-inner-nav owl-ui-lg">
+	</div>
+</nav>
+<!--END: ГЛАВНОЕ МЕНЮ -->
 
-			<div class="item" style="background-image: url('img/slider-3.jpg');">
-				<div class="container">
-					<div class="row">
-						<div class="page-box wow fadeIn animated">
-							<p class="title">Providing premium</p>
-							<p class="description">products is available</p>
-							<p class="text">Lorem ipsum dolor  conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-							<a href="#" class="more fa fa-angle-right"></a>
-						</div>
-					</div>
-				</div><!-- /.container -->
-			</div><!-- /.item -->
+<!--ГЛАВНЫЙ СЛАЙДЕР-->
+<section id="mainSlider">
+	<div id="owl-main" class="owl-carousel  owl-inner-nav owl-ui-lg">
 
-			<div class="item" style="background-image: url('img/picture3.jpg');">
-				<div class="container">
-					<div class="row">
-						<div class="page-box">
-							<p class="title">Providing premium</p>
-							<p class="description">products is available</p>
-							<p class="text">Lorem ipsum dolor  conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-							<a href="#" class="more fa fa-angle-right"></a>
-						</div>
-					</div>
-				</div><!-- /.container -->
-			</div><!-- /.item -->
-
-			<div class="item" style="background-image: url('img/slider-1.jpg');">
-				<div class="container">
-					<div class="row">
-						<div class="page-box">
-							<p class="title">Providing premium</p>
-							<p class="description">products is available</p>
-							<p class="text">Lorem ipsum dolor  conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-							<a href="#" class="more fa fa-angle-right"></a>
-						</div>
-					</div>
-				</div><!-- /.container -->
-			</div><!-- /.item -->
-
-		</div><!-- /.owl-carousel -->
-	</section>
-
-
-
-	<h2 class="heading wow fadeInUp animated">что мы делаем</h2>
-
-
-	<div class="services">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6 col-md-6 wow fadeInLeft animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
-					<div class="box" style="background-image: url('../img/page1_pic1.jpg')">
-						<em></em>
-						<strong></strong>
-						<div class="caption">
-							<p class="title">DUCTING</p>
-							<p>Lorem ipsum dolor  conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-						</div>
-						<a href="#" class="fa fa-angle-right"></a>
+		<div class="item" style="background-image: url('img/slider-3.jpg');">
+			<div class="container">
+				<div class="row">
+					<div class="page-box wow fadeIn animated">
+						<p class="title">Providing premium</p>
+						<p class="description">products is available</p>
+						<p class="text">Lorem ipsum dolor  conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+						<a href="#" class="more fa fa-angle-right"></a>
 					</div>
 				</div>
-				<div class="col-lg-6 col-md-6 wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
-					<div class="box" style="background-image: url('../img/page1_pic2.jpg')">
-						<em></em>
-						<strong></strong>
-						<div class="caption">
-							<p class="title">STACKS</p>
-							<p>Lorem ipsum dolor  conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-						</div>
-						<a href="#" class="fa fa-angle-right"></a>
+			</div><!-- /.container -->
+		</div><!-- /.item -->
+
+		<div class="item" style="background-image: url('img/picture3.jpg');">
+			<div class="container">
+				<div class="row">
+					<div class="page-box">
+						<p class="title">Providing premium</p>
+						<p class="description">products is available</p>
+						<p class="text">Lorem ipsum dolor  conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+						<a href="#" class="more fa fa-angle-right"></a>
 					</div>
 				</div>
-				<div class="col-lg-6 col-md-6 wow fadeInLeft animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
-					<div class="box" style="background-image: url('../img/page1_pic2.jpg')">
-						<em></em>
-						<strong></strong>
-						<div class="caption">
-							<p class="title">tanks</p>
-							<p>Lorem ipsum dolor  conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-						</div>
-						<a href="#" class="fa fa-angle-right"></a>
+			</div><!-- /.container -->
+		</div><!-- /.item -->
+
+		<div class="item" style="background-image: url('img/slider-1.jpg');">
+			<div class="container">
+				<div class="row">
+					<div class="page-box">
+						<p class="title">Providing premium</p>
+						<p class="description">products is available</p>
+						<p class="text">Lorem ipsum dolor  conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+						<a href="#" class="more fa fa-angle-right"></a>
 					</div>
 				</div>
-				<div class="col-lg-6 col-md-6 wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
-					<div class="box" style="background-image: url('../img/page1_pic2.jpg')">
-						<em></em>
-						<strong></strong>
-						<div class="caption">
-							<p class="title">STRUCTURAL</p>
-							<p>Lorem ipsum dolor  conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-						</div>
-						<a href="#" class="fa fa-angle-right"></a>
+			</div><!-- /.container -->
+		</div><!-- /.item -->
+
+	</div><!-- /.owl-carousel -->
+</section>
+<!--END:  ГЛАВНЫЙ СЛАЙДЕР-->
+
+
+<!--СЕКЦИЯ УСЛУГ (ЧТО МЫ ДЕЛАЕМ)-->
+<h2 class="heading wow fadeInUp animated">что мы делаем</h2>
+<div class="services">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-md-6 wow fadeInLeft animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+				<div class="box" style="background-image: url('../img/page1_pic1.jpg')">
+					<em></em>
+					<strong></strong>
+					<div class="caption">
+						<p class="title">DUCTING</p>
+						<p>Lorem ipsum dolor  conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
 					</div>
+					<a href="#" class="fa fa-angle-right"></a>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6 wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
+				<div class="box" style="background-image: url('../img/page1_pic2.jpg')">
+					<em></em>
+					<strong></strong>
+					<div class="caption">
+						<p class="title">STACKS</p>
+						<p>Lorem ipsum dolor  conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+					</div>
+					<a href="#" class="fa fa-angle-right"></a>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6 wow fadeInLeft animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+				<div class="box" style="background-image: url('../img/page1_pic2.jpg')">
+					<em></em>
+					<strong></strong>
+					<div class="caption">
+						<p class="title">tanks</p>
+						<p>Lorem ipsum dolor  conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+					</div>
+					<a href="#" class="fa fa-angle-right"></a>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6 wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
+				<div class="box" style="background-image: url('../img/page1_pic2.jpg')">
+					<em></em>
+					<strong></strong>
+					<div class="caption">
+						<p class="title">STRUCTURAL</p>
+						<p>Lorem ipsum dolor  conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+					</div>
+					<a href="#" class="fa fa-angle-right"></a>
 				</div>
 			</div>
 		</div>
 	</div>
+</div>
+<!--END: СЕКЦИЯ УСЛУГ (ЧТО МЫ ДЕЛАЕМ)-->
 
-
-	<h2 class="heading wow fadeInUp animated">ЧТО У НАС ПОЛУЧАЕТСЯ</h2>
-
-	<div class="working-directions">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-3 col-md-6 wow fadeInRight animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInRight;">
-					<a href="" class="box" style="background-image: url('img/direction-1.jpg')">
-						<em></em>
-						<strong></strong>
-						<div class="caption">
-							<p class="title">направление 1</p>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-3 col-md-6 wow fadeInRight animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInRight;">
-					<a href="" class="box" style="background-image: url('img/direction-2.jpg')">
-						<em></em>
-						<strong></strong>
-						<div class="caption">
-							<p class="title">направление 2</p>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-3 col-md-6 wow fadeInRight animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInRight;">
-					<a href="" class="box" style="background-image: url('img/direction-3.jpg')">
-						<em></em>
-						<strong></strong>
-						<div class="caption">
-							<p class="title">направление 3</p>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-3 col-md-6 wow fadeInRight animated" data-wow-delay="0.1s" ">
-					<a href="" class="box" style="background-image: url('img/direction-4.jpg')">
-						<em></em>
-						<strong></strong>
-						<div class="caption">
-							<p class="title">направление 4</p>
-						</div>
-					</a>
-				</div>
+<!--СЕКЦИЯ НАПРАВЛЕНИЙ РАБОТЫ (ЧТО У НАС ПОЛУЧАЕТСЯ)-->
+<h2 class="heading wow fadeInUp animated">ЧТО У НАС ПОЛУЧАЕТСЯ</h2>
+<div class="working-directions">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-6 wow fadeInRight animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInRight;">
+				<a href="" class="box" style="background-image: url('img/direction-1.jpg')">
+					<em></em>
+					<strong></strong>
+					<div class="caption">
+						<p class="title">направление 1</p>
+					</div>
+				</a>
 			</div>
+			<div class="col-lg-3 col-md-6 wow fadeInRight animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInRight;">
+				<a href="" class="box" style="background-image: url('img/direction-2.jpg')">
+					<em></em>
+					<strong></strong>
+					<div class="caption">
+						<p class="title">направление 2</p>
+					</div>
+				</a>
+			</div>
+			<div class="col-lg-3 col-md-6 wow fadeInRight animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInRight;">
+				<a href="" class="box" style="background-image: url('img/direction-3.jpg')">
+					<em></em>
+					<strong></strong>
+					<div class="caption">
+						<p class="title">направление 3</p>
+					</div>
+				</a>
+			</div>
+			<div class="col-lg-3 col-md-6 wow fadeInRight animated" data-wow-delay="0.1s" ">
+			<a href="" class="box" style="background-image: url('img/direction-4.jpg')">
+				<em></em>
+				<strong></strong>
+				<div class="caption">
+					<p class="title">направление 4</p>
+				</div>
+			</a>
 		</div>
 	</div>
+</div>
+</div>
+<!--END: СЕКЦИЯ НАПРАВЛЕНИЙ РАБОТЫ (ЧТО У НАС ПОЛУЧАЕТСЯ)-->
 
-	<h2 class="heading heading--paralax-section wow fadeInUp animated">НАМ ДОВЕРЯЮТ</h2>
 
-	<section class="brands">
-		<div class="container-fluid brands-slider ">
-			<div class="brands-slider__item">
-				<img src="img/brand.png" alt="" class="img-responsive">
-			</div>
-			<div class="brands-slider__item">
-				<img src="img/brand.png" alt="" class="img-responsive">
-			</div>
-			<div class="brands-slider__item">
-				<img src="img/brand.png" alt="" class="img-responsive">
-			</div>
-			<div class="brands-slider__item">
-				<img src="img/brand.png" alt="" class="img-responsive">
-			</div>
-
-			<div class="brands-slider__item">
-				<img src="img/brand.png" alt="" class="img-responsive">
-			</div>
-			<div class="brands-slider__item">
-				<img src="img/brand.png" alt="" class="img-responsive">
-			</div>
-			<div class="brands-slider__item">
-				<img src="img/brand.png" alt="" class="img-responsive">
-			</div>
-			<div class="brands-slider__item">
-				<img src="img/brand.png" alt="" class="img-responsive">
-			</div>
-			<div class="brands-slider__item">
-				<img src="img/brand.png" alt="" class="img-responsive">
-			</div>
+<!--СЕКЦИЯ БРЕНДОВ (ЛОГОТИПЫ ЗАКАЗЧИКА)-->
+<h2 class="heading heading--paralax-section wow fadeInUp animated">НАМ ДОВЕРЯЮТ</h2>
+<section class="brands">
+	<div class="container-fluid brands-slider ">
+		<div class="brands-slider__item">
+			<img src="img/brand.png" alt="" class="img-responsive">
 		</div>
-	</section>
-
-	<section class="paralax-section" data-parallax="scroll" data-image-src="img/bg_pic.jpg" >
-		<div class="container">
-			<div class="row">
-				<div class="page-box wow fadeInRight animated">
-					<p class="title">Providing premium</p>
-					<p class="description">products is available</p>
-					<p class="text">Lorem ipsum dolor  conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-					<a href="#" class="more fa fa-angle-right"></a>
-				</div>
-			</div>
+		<div class="brands-slider__item">
+			<img src="img/brand.png" alt="" class="img-responsive">
 		</div>
-	</section>
+		<div class="brands-slider__item">
+			<img src="img/brand.png" alt="" class="img-responsive">
+		</div>
+		<div class="brands-slider__item">
+			<img src="img/brand.png" alt="" class="img-responsive">
+		</div>
 
-	<div class="products">
-		<div class="container">
-			<p class="title wow fadeIn animated"><strong>Our</strong> products</p>
-			<div class="row">
-				<div class="col-lg-4 col-md-7  wow fadeInUp animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
-					<ul class="list">
-						<li class="fa fa-angle-right"><a href="#">Lorem ipsum dolor </a></li>
-						<li class="fa fa-angle-right"><a href="#">Conse ctetur adipisicing</a></li>
-						<li class="fa fa-angle-right"><a href="#">Elit sed do eiusmod </a></li>
-						<li class="fa fa-angle-right"><a href="#">Incididunt ut labore</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-4 col-md-7  wow fadeInUp animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-					<ul class="list">
-						<li class="fa fa-angle-right"><a href="#">Lorem ipsum dolor </a></li>
-						<li class="fa fa-angle-right"><a href="#">Conse ctetur adipisicing</a></li>
-						<li class="fa fa-angle-right"><a href="#">Elit sed do eiusmod </a></li>
-						<li class="fa fa-angle-right"><a href="#">Incididunt ut labore</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-4 col-md-7  wow fadeInUp animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-					<ul class="list">
-						<li class="fa fa-angle-right"><a href="#">Lorem ipsum dolor </a></li>
-						<li class="fa fa-angle-right"><a href="#">Conse ctetur adipisicing</a></li>
-						<li class="fa fa-angle-right"><a href="#">Elit sed do eiusmod </a></li>
-						<li class="fa fa-angle-right"><a href="#">Incididunt ut labore</a></li>
-					</ul>
-				</div>
-			</div>
+		<div class="brands-slider__item">
+			<img src="img/brand.png" alt="" class="img-responsive">
+		</div>
+		<div class="brands-slider__item">
+			<img src="img/brand.png" alt="" class="img-responsive">
+		</div>
+		<div class="brands-slider__item">
+			<img src="img/brand.png" alt="" class="img-responsive">
+		</div>
+		<div class="brands-slider__item">
+			<img src="img/brand.png" alt="" class="img-responsive">
+		</div>
+		<div class="brands-slider__item">
+			<img src="img/brand.png" alt="" class="img-responsive">
 		</div>
 	</div>
+</section>
+<!--СЕКЦИЯ БРЕНДОВ (ЛОГОТИПЫ ЗАКАЗЧИКА)-->
 
-
-
-<section class="paralax-section" data-parallax="scroll" data-image-src="img/bg_pic1.jpg" >
+<!--ПАРАЛАКС-СЕКЦИЯ-1:))-->
+<section class="paralax-section" data-parallax="scroll" data-image-src="img/bg_pic.jpg" >
 	<div class="container">
 		<div class="row">
 			<div class="page-box wow fadeInRight animated">
@@ -319,55 +257,140 @@
 		</div>
 	</div>
 </section>
+<!--END: ПАРАЛАКС-СЕКЦИЯ-1:))-->
 
 
-	<footer class="footer">
-		<div class="footer-top">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6 wow fadeInUp animated">
-						<p class="title">contacts</p>
-						<ul class="footer-top__menu">
-							<li><a href="index.html">главная</a></li>
-							<li><a href="about.html">о нас</a></li>
-							<li><a href="services.html">товары и услуги</a></li>
-							<li><a href="galery.html">галерея</a></li>
-							<li><a href="contacts.html">контакты</a></li>
-						</ul>
-					</div>
-					<div class="col-lg-6 wow fadeInUp animated">
-						<div id="map" class="map"></div>
-					</div>
-				</div>
+<!--СЕКЦИЯ НАШИ ПРОДУКТЫ-->
+<div class="products">
+	<div class="container">
+		<p class="title wow fadeIn animated"><strong>Our</strong> products</p>
+		<div class="row">
+			<div class="col-lg-4 col-md-7  wow fadeInUp animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+				<ul class="list">
+					<li class="fa fa-angle-right"><a href="#">Lorem ipsum dolor </a></li>
+					<li class="fa fa-angle-right"><a href="#">Conse ctetur adipisicing</a></li>
+					<li class="fa fa-angle-right"><a href="#">Elit sed do eiusmod </a></li>
+					<li class="fa fa-angle-right"><a href="#">Incididunt ut labore</a></li>
+				</ul>
+			</div>
+			<div class="col-lg-4 col-md-7  wow fadeInUp animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+				<ul class="list">
+					<li class="fa fa-angle-right"><a href="#">Lorem ipsum dolor </a></li>
+					<li class="fa fa-angle-right"><a href="#">Conse ctetur adipisicing</a></li>
+					<li class="fa fa-angle-right"><a href="#">Elit sed do eiusmod </a></li>
+					<li class="fa fa-angle-right"><a href="#">Incididunt ut labore</a></li>
+				</ul>
+			</div>
+			<div class="col-lg-4 col-md-7  wow fadeInUp animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+				<ul class="list">
+					<li class="fa fa-angle-right"><a href="#">Lorem ipsum dolor </a></li>
+					<li class="fa fa-angle-right"><a href="#">Conse ctetur adipisicing</a></li>
+					<li class="fa fa-angle-right"><a href="#">Elit sed do eiusmod </a></li>
+					<li class="fa fa-angle-right"><a href="#">Incididunt ut labore</a></li>
+				</ul>
 			</div>
 		</div>
-		<div class="footer-bottom">
-			<div class="container">
-				<div class="row">
-					<p class="wow fadeInUp animated">Steel and Fabrication Industry © <em id="copyright-year">2018</em>. <a href="index-5.html">Privacy Policy</a></p>
-					<ul class="social wow fadeInUp animated">
-						<li><a href="javascript:void(0)">
-							<i class="fa fa-facebook" aria-hidden="true"></i>
-						</a></li>
-						<li><a href="javascript:void(0)">
-							<i class="fa fa-vk" aria-hidden="true"></i>
-						</a></li>
-						<li><a href="javascript:void(0)">
-							<i class="fa fa-instagram" aria-hidden="true"></i>
-						</a></li>
+	</div>
+</div>
+<!--END: СЕКЦИЯ НАШИ ПРОДУКТЫ-->
+
+
+<!--ПАРАЛАКС-СЕКЦИЯ-2:))-->
+<section class="paralax-section" data-parallax="scroll" data-image-src="img/bg_pic1.jpg" >
+	<div class="container">
+		<div class="row">
+			<div class="page-box wow fadeInLeft animated">
+				<p class="title">Providing premium</p>
+				<p class="description">products is available</p>
+				<p class="text">Lorem ipsum dolor  conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+				<a href="#" class="more fa fa-angle-right"></a>
+			</div>
+		</div>
+	</div>
+</section>
+<!--END: ПАРАЛАКС-СЕКЦИЯ-2:))-->
+
+
+<!--САМ ВИДИШЬ, ЧТО ЭТО ФУТЕР:)-->
+<footer class="footer">
+	<div class="footer-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 wow fadeInUp animated">
+					<p class="title">contacts</p>
+					<ul class="footer-top__menu">
+						<li><a href="index.html">главная</a></li>
+						<li><a href="about.html">о нас</a></li>
+						<li><a href="services.html">товары и услуги</a></li>
+						<li><a href="galery.html">галерея</a></li>
+						<li><a href="contacts.html">контакты</a></li>
 					</ul>
 				</div>
+				<div class="col-lg-6 wow fadeInUp animated">
+					<!--яндекс-карта -->
+					<div id="map" class="map"></div>
+					<!--end: яндекс-карта -->
+				</div>
 			</div>
 		</div>
-	</footer>
+	</div>
+	<div class="footer-bottom">
+		<div class="container">
+			<div class="row">
+				<p class="wow fadeInUp animated">Steel and Fabrication Industry © <em id="copyright-year">2018</em>. <a href="index-5.html">Privacy Policy</a></p>
+				<ul class="social wow fadeInUp animated">
+					<li><a href="javascript:void(0)">
+						<i class="fa fa-facebook" aria-hidden="true"></i>
+					</a></li>
+					<li><a href="javascript:void(0)">
+						<i class="fa fa-vk" aria-hidden="true"></i>
+					</a></li>
+					<li><a href="javascript:void(0)">
+						<i class="fa fa-instagram" aria-hidden="true"></i>
+					</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+<!--END: САМ ВИДИШЬ, ЧТО ЭТО ФУТЕР:)-->
 
-	<button id="toTop">
-		<i class="fa fa-chevron-up" aria-hidden="true"></i>
-	</button>
 
-	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
-	</script>
-	<script src="js/scripts.min.js"></script>
+<!--КНОПКА "ВВЕРХ"-->
+<button id="toTop">
+	<i class="fa fa-chevron-up" aria-hidden="true"></i>
+</button>
+<!--END: КНОПКА "ВВЕРХ"-->
+
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+</script>
+<script src="js/scripts.min.js"></script>
 
 </body>
+
+<head>
+
+	<meta charset="utf-8">
+
+
+	<title>DK-BEST</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
 </html>

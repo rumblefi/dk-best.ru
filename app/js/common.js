@@ -80,6 +80,12 @@ $(function() {
         return false;
     });
 
+
+    $(".burger").on("click", function () {
+        $(this).toggleClass('burger--close');
+        $(".main-nav__list-wrapper").slideToggle('slow');
+    });
+
 });
 
 
