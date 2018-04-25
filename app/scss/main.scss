@@ -89,7 +89,7 @@ h2{
 
 .header-top{
 	padding: 15px 0;
-	background-color: #E5332E;
+	background-color: $accent;
 	color: #ffffff;
 	@media (max-width: 992px) {
 		padding: 20px 15px;
@@ -162,7 +162,7 @@ h2{
 	width: 570px ;
 	position: relative ;
 	z-index: 2 ;
-	background: rgba(252, 90, 10, 0.85);
+	background: rgba($accent, 0.85);
 	padding: 46px 0 45px 34px ;
 	color: #ffffff ;
 	height: 100%;
@@ -244,7 +244,7 @@ h2{
 			font-size: 70px;
 		}
 		@media (max-width: 510px) {
-			font-size: 50px;
+			font-size: 40px;
 			line-height: 55px;
 		}
 	}
@@ -261,14 +261,14 @@ h2{
 			font-size: 30px;
 		}
 		@media (max-width: 390px) {
-			font-size: 25px;
+			font-size: 21px;
 		}
 	}
 	.text{
 		width: 75% ;
 		@media (max-width: 510px) {
 			font-size: 14px;
-			width: 100%;
+			width: 95%;
 		}
 	}
 	.more {
@@ -301,7 +301,7 @@ h2{
 		@media (max-width: 992px) {
 			display: none;
 			position: absolute;
-			background-color: #E5332E;
+			background-color: $accent;
 			left: 0;
 			width: 100%;
 			top: 100%;
@@ -328,7 +328,7 @@ h2{
 				@media (max-width: 992px) {
 					position: static;
 					width: 100%;
-					background-color: #E5332E;
+					background-color: $accent;
 					border: none;
 					padding-left: 30px;
 					padding-top: 0;
@@ -374,7 +374,7 @@ h2{
 						&.sf-with-ul{
 							&::after{
 								border-top-color: transparent;
-								border-left-color: #FC5A0A;
+								border-left-color: $accent;
 								@media (max-width: 992px) {
 									border-left-color: #ffffff;
 								}
@@ -442,7 +442,7 @@ h2{
 			a{
 				display: block;
 				padding: 29px 0;
-				color: #FC5A0A;
+				color: $accent;
 				border: none;
 				@media (max-width: 992px) {
 					color: #ffffff;
@@ -484,42 +484,6 @@ h2{
 }
 
 
-.slider-dots{
-	width: 100%;
-	position: absolute;
-	z-index: 1;
-	left: 50%;
-	transform: translateX(-50%);
-	bottom: 50px;
-	.slick-dots{
-		width: 100%;
-		display: flex;
-		justify-content: flex-end;
-		li{
-			margin-right: 12px;
-			&.slick-active{
-				.slider-dots__dot{
-					background-color: $accent;
-				}
-			}
-			&:hover{
-				.slider-dots__dot{
-					background-color: $accent;
-				}
-			}
-			&:last-child{
-				margin-right: 0;
-			}
-			.slider-dots__dot{
-				display: block;
-				width: 20px;
-				height: 20px;
-				background-color: #fff;
-				border-radius: 50%;
-			}
-		}
-	}
-}
 
 .heading{
 	text-transform: uppercase;
@@ -543,11 +507,19 @@ h2{
 .working-directions{
 	overflow: hidden;
 }
+
+.services__box-wrapper{
+	min-height: 350px;
+	margin-bottom: 30px;
+}
+
 .services .box,
 .working-directions .box{
 	padding: 140px 0 25px 27px;
-	margin-bottom: 30px;
 	position: relative;
+	background-size: cover;
+	background-position: center center;
+	height: 100%;
 }
 .services .box em,
 .working-directions .box em{
@@ -584,7 +556,7 @@ h2{
 	margin-bottom: 10px;
 	line-height: 55px;
 	@media (max-width: 992px) {
-		font-size: 47px;
+		font-size: 35px;
 	}
 }
 .services .box p,
@@ -604,7 +576,7 @@ h2{
 	bottom: 30px;
 	right: 30px;
 	font-size: 55px;
-	background: #fc5a0a;
+	background: $accent;
 	line-height: 74px;
 	transition: all 0.25s;
 	@media (max-width: 500px) {
@@ -642,18 +614,20 @@ h2{
 
 .paralax-section {
 	overflow: hidden;
-	height: 575px;
+	min-height: 575px;
 	padding: 50px 0;
 	background-size: cover;
+	background-position: center center;
 	&--galery{
-		height: 500px;
+		min-height: 500px;
 		@media (max-width: 992px) {
 			height: auto;
 		}
 	}
 	&--products{
+		height: 1px;
 		@media (max-width: 768px) {
-			height: 100vh;
+			min-height: 100vh;
 		}
 	}
 	.container{
@@ -708,7 +682,7 @@ h2{
 .pre-footer .title {
 	font-size: 55px;
 	font-weight: bold;
-	color: #fc5a0a;
+	color: $accent;
 	line-height: 58px;
 	text-transform: uppercase;
 	margin-bottom: 13px;
@@ -716,16 +690,20 @@ h2{
 .pre-footer .description {
 	font-size: 55px;
 	margin: 0 0 23px 0;
-	color: #fc5a0a;
+	color: $accent;
 	text-transform: uppercase;
 }
 
 
 #owl-main {
-	.item {
+	.owl-item{
 		min-height: 580px;
+	}
+	.item {
+		height: 100%;
 		background-color: #FFF;
 		background-size: cover;
+		background-position: center center;
 		@media (max-width: 992px) {
 			min-height: 620px;
 		}
@@ -772,7 +750,7 @@ h2{
 		margin-right: 12px;
 		&.active{
 			span{
-				background-color: #fc5a0a;
+				background-color: $accent;
 			}
 		}
 		&:last-child{
@@ -830,11 +808,16 @@ h2{
 	}
 }
 
+.working-directions__box-wrapper{
+	margin-bottom: 15px;
+}
+
 .working-directions .box {
-	height: 385px;
+	height: 350px;
 	padding: 0;
 	display: block;
-	background-color: cover;
+	background-size: cover;
+	background-position: center center;
 }
 
 .working-directions .box .caption {
@@ -936,7 +919,7 @@ h2{
 .footer-top p strong {
 	font-size: 17px;
 	text-transform: uppercase;
-	color: #fc5a0a;
+	color: $accent;
 	font-weight: 500;
 }
 .footer-top p a {
@@ -951,7 +934,7 @@ h2{
 
 .footer-top .map {
 	height: 300px;
-	border: 4px solid #fc5a0a;
+	border: 4px solid $accent;
 }
 
 .footer-bottom{
@@ -1009,7 +992,7 @@ h2{
 		margin: 0;
 		text-align: left;
 		margin-bottom: 10px;
-		color: #fc5a0a;
+		color: $accent;
 		font-weight: normal;
 	}
 	.box{
@@ -1040,7 +1023,7 @@ h3{
 	margin: 0 0 1px 0;
 	padding: 0 0 1px 0;
 	font-size: 30px;
-	color: #272d33;
+	color: $accent;
 	border-bottom: 1px solid #dadbdc;
 	position: relative;
 	display: block;
@@ -1055,7 +1038,7 @@ h3{
 	content: '';
 }
 .list li a {
-	color: #fc5a0a;
+	color: $accent;
 	font-weight: bold;
 	font-size: 19px;
 	text-transform: uppercase;
@@ -1071,7 +1054,7 @@ h3{
 }
 .list li:hover a {
 	color: #ffffff;
-	background: #fc5a0a;
+	background: $accent;
 	-webkit-transition: all 0.25s;
 	-o-transition: all 0.25s;
 	transition: all 0.25s;
@@ -1091,7 +1074,7 @@ h3{
 		margin: 0;
 		text-align: left;
 		margin-bottom: 40px;
-		color: #fc5a0a;
+		color: $accent;
 		font-weight: normal;
 	}
 	.thumbnail-wrap{
@@ -1121,16 +1104,17 @@ h3{
 	transition: all 0.25s;
 }
 .galery .thumbnail .caption a:hover {
-	color: #fc5a0a;
+	color: $accent;
 }
 .galery .thumbnail .caption p {
 	margin: 6px 0 0 0;
 }
 .galery .thumbnail figure {
 	margin: 0;
+	height: 283px;
 }
 .galery .thumbnail figure img {
-	width: 100%;
+	height: 100%;
 }
 
 
@@ -1144,7 +1128,7 @@ h3{
 		margin: 0;
 		text-align: left;
 		margin-bottom: 20px;
-		color: #fc5a0a;
+		color: $accent;
 		font-weight: normal;
 	}
 }
@@ -1189,7 +1173,7 @@ h3{
 
 .burger {
 	$toggler-part-height: 4px;
-	$toggler-part-bg-color: #B78259;
+	$toggler-part-bg-color: $accent;
 	display: none;
 	position: relative;
 	z-index: 10;
