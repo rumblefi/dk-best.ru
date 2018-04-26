@@ -181,13 +181,13 @@
                 <input type="text" name="Phone" class="popup-form__field popup-form__phone" required placeholder="Номер телефона">
             </div>
             <div class="col-lg-6  popup__partial">
-                <select name="city" id="city" class="cd-select">
+                <select name="city-select" id="popup-form__select" class="popup-form__select">
                     <option value="-1" selected>Санкт-Петербург</option>
-                    <option value="1" class="icon-monkey">Москва</option>
-                    <option value="2" class="icon-bear">Екатеринбург</option>
-                    <option value="3" class="icon-squirrel">Нижний Новгород</option>
-                    <option value="4" class="icon-elephant">Ростов-на-Дону</option>
-                    <option value="5" class="icon-elephant">Казань</option>
+                    <option value="Москва" class="icon-monkey">Москва</option>
+                    <option value="Екатеринбург" class="icon-bear">Екатеринбург</option>
+                    <option value="Нижний Новгород" class="icon-squirrel">Нижний Новгород</option>
+                    <option value="Ростов-на-Дону" class="icon-elephant">Ростов-на-Дону</option>
+                    <option value="Казань" class="icon-elephant">Казань</option>
                 </select>
             </div>
             <div class="col-lg-6  popup__partial">
@@ -228,7 +228,7 @@
 
 <div class="popup popup__callToAction mfp-hide" id="callToAction-popup">
     <div class="popup__title">заказать звонок</div>
-    <form action="" class="popup-form" id="callToAction-form">
+    <form action="" class="popup-form" id="calculate-form">
         <div class="row">
             <div class="col-lg-6  popup__partial">
                 <input type="text" name="Name" class="popup-form__field" required placeholder="Ваше имя">
@@ -240,6 +240,8 @@
         </div>
     </form>
 </div>
+
+
 
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
 </script>
