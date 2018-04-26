@@ -80,11 +80,25 @@ $(function() {
         return false;
     });
 
-
+    //BURGER
     $(".burger").on("click", function () {
         $(this).toggleClass('burger--close');
         $(".main-nav__list-wrapper").slideToggle('slow');
     });
+
+    //POPUPS
+    $('.callToAction-btn').magnificPopup({
+        type:'inline',
+        midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
+    });
+
+    //кастомный селект
+    $( '#city' ).dropdown( {
+        gutter : 40
+    } );
+
+
+    //защита от дурака (чтобы все елементы слайдера были одинаковым по высоте, независимо от контента)
 
 });
 

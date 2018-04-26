@@ -41,7 +41,10 @@
                         06:00-16:00 каждый день без выходных
                     </div>
                 </div>
-                <button class="callToAction-btn wow fadeInRight animated">заказать</button>
+                <div class="header-top__btns-wrap">
+                    <a href='#calculate-popup' class="callToAction-btn wow fadeInRight animated">заказать расчет</a>
+                    <a href="#callToAction-popup" class="callToAction-btn wow fadeInRight animated">заказать звонок</a>
+                </div>
             </div>
         </div>
     </div>
@@ -83,7 +86,7 @@
 
 <div class="galery">
     <div class="container">
-        <h2 class="wow fadeInUp animated heading"><strong>Project</strong> Gallery</h2>
+        <h2 class="wow fadeInUp animated heading">галерея</h2>
         <div class="row">
             <div class="col-lg-4 col-md-6 wow fadeInUp animated" data-wow-delay="0.2s" >
                 <div class="thumbnail-wrap">
@@ -195,15 +198,17 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="page-box page-box--galery wow fadeInLeft animated">
-                    <p class="title title--galery">presentation</p>
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mollis nibh ac lectus bibendum, in aliquet tortor luctus. Morbi ut libero eget sem gravida condimentum. Maecenas semper sagittis purus, senectus et netus et malesuada fames ac turpis egestas. Morbi posuere diam auctor tellus dictum interdum. Donec faucibus a felis ut porta. Nulla facilisi. Donec diam quam, aliquet in commodo a.</p>
+                    <p class="title title--galery">лорем</p>
+                    <p class="text">Таким образом сложившаяся структура организации позволяет оценить значение форм развития. Не следует, однако забывать, что дальнейшее развитие различных форм деятельности требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач
+                    </p>
                     <a href="#" class="more fa fa-angle-right"></a>
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="page-box page-box--galery wow fadeInRight animated">
-                    <p class="title">presentation</p>
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mollis nibh ac lectus bibendum, in aliquet tortor luctus. Morbi ut libero eget sem gravida condimentum. Maecenas semper sagittis purus, senectus et netus et malesuada fames ac turpis egestas. Morbi posuere diam auctor tellus dictum interdum. Donec faucibus a felis ut porta. Nulla facilisi. Donec diam quam, aliquet in commodo a.</p>
+                    <p class="title">лорем</p>
+                    <p class="text">Таким образом сложившаяся структура организации позволяет оценить значение форм развития. Не следует, однако забывать, что дальнейшее развитие различных форм деятельности требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач.
+                    </p>
                     <a href="#" class="more fa fa-angle-right"></a>
                 </div>
             </div>
@@ -212,13 +217,13 @@
 </section>
 
 
-
+<!--САМ ВИДИШЬ, ЧТО ЭТО ФУТЕР:)-->
 <footer class="footer">
     <div class="footer-top">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 wow fadeInUp animated">
-                    <p class="title">contacts</p>
+                    <h2 class="heading">контакты</h2>
                     <ul class="footer-top__menu">
                         <li><a href="index.html">главная</a></li>
                         <li><a href="about.html">о нас</a></li>
@@ -228,7 +233,9 @@
                     </ul>
                 </div>
                 <div class="col-lg-6 wow fadeInUp animated">
+                    <!--яндекс-карта -->
                     <div id="map" class="map"></div>
+                    <!--end: яндекс-карта -->
                 </div>
             </div>
         </div>
@@ -236,7 +243,7 @@
     <div class="footer-bottom">
         <div class="container">
             <div class="row">
-                <p class="wow fadeInUp animated">Steel and Fabrication Industry © <em id="copyright-year">2018</em>. <a href="index-5.html">Privacy Policy</a></p>
+                <p class="wow fadeInUp animated">Копирайт в футере © <em id="copyright-year">2018</em>. <a href="index-5.html">Права сохранены</a></p>
                 <ul class="social wow fadeInUp animated">
                     <li><a href="javascript:void(0)">
                         <i class="fa fa-facebook" aria-hidden="true"></i>
@@ -252,13 +259,88 @@
         </div>
     </div>
 </footer>
+<!--END: САМ ВИДИШЬ, ЧТО ЭТО ФУТЕР:)-->
 
 
-
+<!--КНОПКА "ВВЕРХ"-->
 <button id="toTop">
     <i class="fa fa-chevron-up" aria-hidden="true"></i>
 </button>
+<!--END: КНОПКА "ВВЕРХ"-->
 
+<div class="popup mfp-hide" id="calculate-popup">
+    <div class="popup__title">заказать расчет</div>
+    <form action="" class="popup-form" id="calculate-form">
+        <div class="row">
+            <div class="col-lg-6  popup__partial">
+                <input type="text" name="Name" class="popup-form__field" required placeholder="Ваше имя">
+            </div>
+            <div class="col-lg-6  popup__partial">
+                <input type="email" name="E-mail" class="popup-form__field" required placeholder="E-mail">
+            </div>
+            <div class="col-lg-6  popup__partial">
+                <input type="text" name="Phone" class="popup-form__field popup-form__phone" required placeholder="Номер телефона">
+            </div>
+            <div class="col-lg-6  popup__partial">
+                <select name="city" id="city" class="cd-select">
+                    <option value="-1" selected>Санкт-Петербург</option>
+                    <option value="1" class="icon-monkey">Москва</option>
+                    <option value="2" class="icon-bear">Екатеринбург</option>
+                    <option value="3" class="icon-squirrel">Нижний Новгород</option>
+                    <option value="4" class="icon-elephant">Ростов-на-Дону</option>
+                    <option value="5" class="icon-elephant">Казань</option>
+                </select>
+            </div>
+            <div class="col-lg-6  popup__partial">
+                <div class="popup-form__radio-wrapper">
+                    <input type="radio" checked name="communication" value="Связаться по телефону" id="communication0">
+                    <label for="communication0" >
+                        <div class="popup-form__circle"><span></span></div>
+                        <span>Связаться по телефону</span>
+                    </label>
+                </div>
+                <div class="popup-form__radio-wrapper">
+                    <input type="radio"  name="communication" value="Связаться по почте" id="communication1">
+                    <label for="communication1" >
+                        <div class="popup-form__circle"><span></span></div>
+                        <span>Связаться по почте</span>
+                    </label>
+                </div>
+            </div>
+            <div class="col-lg-6  popup__partial">
+                <label for="file" class="popup-form-fileup">
+                    <span class="popup-form-fileup__file-name">
+						<span>Загрузить файл</span>
+                    </span>
+                    <input type="file" name="form[file]" id="file" class="popup-form-fileup__input">
+                </label>
+                <label for="file" class="popup-form-fileup">
+                    <span class="popup-form-fileup__file-name">
+						<span>Загрузить еще файл</span>
+                    </span>
+                    <input type="file" name="form[file]" id="dop-file" class="popup-form-fileup__input">
+                </label>
+            </div>
+            <button class="popup-form__submit">Отправить запрос</button>
+        </div>
+    </form>
+</div>
+
+
+<div class="popup popup__callToAction mfp-hide" id="callToAction-popup">
+    <div class="popup__title">заказать звонок</div>
+    <form action="" class="popup-form" id="callToAction-form">
+        <div class="row">
+            <div class="col-lg-6  popup__partial">
+                <input type="text" name="Name" class="popup-form__field" required placeholder="Ваше имя">
+            </div>
+            <div class="col-lg-6  popup__partial">
+                <input type="text" name="Phone" class="popup-form__field popup-form__phone" required placeholder="Номер телефона">
+            </div>
+            <button class="popup-form__submit">Заказать звонок</button>
+        </div>
+    </form>
+</div>
 
 
 
