@@ -2,6 +2,28 @@ $(function() {
 
 	// Custom JS
 
+    //map
+    ymaps.ready(init);
+    var myMap,
+        myPlacemark;
+
+    function init(){
+        myMap = new ymaps.Map("map", {
+            center: [59.93604410, 30.31339938],
+            zoom: 17
+        });
+        myPin = new ymaps.GeoObjectCollection({}, {
+            iconLayout: 'default#image',
+            iconImageHref: 'img/pin-dark.png',
+            iconImageSize: [30, 42],
+            iconImageOffset: [-3, -42]
+        });
+        myPlacemark = new ymaps.Placemark([59.93604410, 30.31339938], {
+        });
+        myPin.add(myPlacemark);
+        myMap.geoObjects.add(myPin);
+    }
+
     //выпадающие дропы в меню
     jQuery('ul.sf-menu').superfish({
         delay:       0,                            // one second delay on mouseout
@@ -35,34 +57,14 @@ $(function() {
     });
 
 
-    $('.brands-slider').infiniteslide({
-        'speed': 75,
-        'responsive': true,
-        'pauseonhover': false, //マウスオーバーでストップ
-        'clone': 2 //子要素の複製回数
+    $('.infiniteslide').infiniteslide({
+        'speed': 100, //速さ　単位はpx/秒です。
+        'direction': 'left', //up/down/left/rightから選択
+        'pauseonhover': true, //マウスオーバーでストップ
+        'responsive': false, //子要素の幅を%で指定しているとき
+        'clone': 1 //子要素の複製回数
     });
 
-    //map
-    ymaps.ready(init);
-    var myMap,
-        myPlacemark;
-
-    function init(){
-        myMap = new ymaps.Map("map", {
-            center: [59.93604410, 30.31339938],
-            zoom: 17
-        });
-        myPin = new ymaps.GeoObjectCollection({}, {
-            iconLayout: 'default#image',
-            iconImageHref: 'img/pin-dark.png',
-            iconImageSize: [30, 42],
-            iconImageOffset: [-3, -42]
-        });
-        myPlacemark = new ymaps.Placemark([59.93604410, 30.31339938], {
-        });
-        myPin.add(myPlacemark);
-        myMap.geoObjects.add(myPin);
-    }
 
     //E-mail Ajax Send
     $("#contact-form").submit(function() { //Change
@@ -98,7 +100,7 @@ $(function() {
     } );
 
 
-    $(".popup-form__phone").inputmask('(99) 9999[9]-9999');;
+    $(".popup-form__phone").inputmask('(99) 9999[9]-9999');
 
 
 });
@@ -186,9 +188,8 @@ $(document).ready(function () {
     }
 
     $(owlElementID).owlCarousel({
-
         autoPlay: 5000,
-        autoPlay: false,
+        autoPlay: true,
         stopOnHover: false,
         navigation: false,
         pagination: true,
