@@ -218,17 +218,13 @@ h2{
 	}
 	&--galery{
 		width: 100%;
-		@media (max-width: 992px) {
-			height: auto;
-			margin-bottom: 30px;
-		}
 		.title{
-			font-size: 50px !important;
+			font-size: 40px !important;
 			@media (max-width: 576px) {
-				font-size: 45px !important;
+				font-size: 35px !important;
 			}
 			@media (max-width: 410px) {
-				font-size: 35px !important;
+				font-size: 27px !important;
 			}
 		}
 	}
@@ -242,14 +238,13 @@ h2{
 			width: 100%;
 		}
 		@media (max-width: 576px) {
-			font-size: 60px;
+			font-size: 65px;
 		}
 		@media (max-width: 510px) {
-			font-size: 40px;
-			line-height: 55px;
+			font-size: 58px;
 		}
-		@media (max-width: 400px) {
-			font-size: 34px;
+		@media (max-width: 390px) {
+			font-size: 45px;
 		}
 	}
 	.description{
@@ -259,13 +254,13 @@ h2{
 		letter-spacing: -1px ;
 		line-height: 1.2;
 		@media (max-width: 576px) {
-			font-size: 30px;
+			font-size: 35px;
 		}
 		@media (max-width: 510px) {
-			font-size: 25px;
+			font-size: 30px;
 		}
 		@media (max-width: 390px) {
-			font-size: 21px;
+			font-size: 25px;
 		}
 	}
 	.text{
@@ -288,12 +283,13 @@ h2{
 		font-size: 55px ;
 		line-height: 74px ;
 		transition: all 0.25s ;
-		@media (max-width: 510px) {
-			position: static;
-			display: block;
-			margin-left: auto;
-			margin-right: 20px;
-			margin-top: 30px;
+		@media (max-width: 992px) {
+			width: 60px;
+			height: 60px;
+			bottom: 20px;
+			right: 20px;
+			font-size: 45px;
+			line-height: 54px;
 		}
 	}
 }
@@ -519,11 +515,15 @@ h2{
 
 .services .box,
 .working-directions .box{
-	padding: 140px 0 25px 27px;
+	padding: 140px 10px 25px 27px;
 	position: relative;
 	background-size: cover;
 	background-position: center center;
 	height: 100%;
+	@media (max-width: 992px) {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 }
 .services .box em,
 .working-directions .box em{
@@ -554,13 +554,13 @@ h2{
 .services .box .title,
 .working-directions .box .title{
 	font-weight: bold;
-	font-size: 45px;
+	font-size: 40px;
 	text-transform: uppercase;
 	color: #ffffff;
 	margin-bottom: 10px;
-	line-height: 55px;
+	line-height: 1.2;
 	@media (max-width: 992px) {
-		font-size: 35px;
+		font-size: 28px;
 	}
 }
 .services .box p,
@@ -583,9 +583,13 @@ h2{
 	background: $accent;
 	line-height: 74px;
 	transition: all 0.25s;
-	@media (max-width: 500px) {
-		width: 70px;
-		height: 70px;
+	@media (max-width: 992px) {
+		width: 60px;
+		height: 60px;
+		bottom: 20px;
+		right: 20px;
+		font-size: 45px;
+		line-height: 54px;
 	}
 }
 .services .box a:hover,
@@ -597,7 +601,7 @@ h2{
 .working-directions .box .caption{
 	position: relative;
 	z-index: 1;
-	width: 60%;
+	width: 65%;
 }
 .services .box:hover strong,
 .working-directions .box:hover strong{
@@ -626,11 +630,10 @@ h2{
 	&--galery{
 		min-height: 500px;
 		@media (max-width: 992px) {
-			height: auto;
+			min-height: 100vh;
 		}
 	}
 	&--products{
-		height: 1px;
 		@media (max-width: 768px) {
 			min-height: 100vh;
 		}
@@ -702,7 +705,8 @@ h2{
 
 #owl-main {
 	.item {
-		min-height: 600px;
+		min-height: 640px;
+		height: 1px;
 		background-color: #FFF;
 		background-size: cover;
 		background-position: center center;
@@ -711,10 +715,10 @@ h2{
 		}
 	}
 	.container {
-		height: inherit;
+		height: 100%;
 	}
 	.row{
-		height: inherit;
+		height: 100%;
 		padding: 50px 0;
 		@media (max-width: 992px) {
 			justify-content: center;
@@ -820,10 +824,12 @@ h2{
 
 .working-directions__box-wrapper{
 	margin-bottom: 15px;
+	min-height: 350px;
+	height: 1px;
 }
 
 .working-directions .box {
-	height: 350px;
+	height: 100%;
 	padding: 0;
 	display: block;
 	background-size: cover;
@@ -1026,11 +1032,6 @@ h2{
 	@media (max-width: 992px) {
 		text-align: center;
 	}
-	.list{
-		@media (max-width: 992px) {
-			text-align: left;
-		}
-	}
 	.heading{
 		margin: 0;
 		margin-bottom: 30px;
@@ -1059,6 +1060,9 @@ h3{
 	margin: 0 0 23px 0;
 	padding: 0;
 	list-style: none;
+	@media (max-width: 992px) {
+		text-align: center;
+	}
 }
 .list li {
 	line-height: 1.428571429;
@@ -1082,7 +1086,7 @@ h3{
 .list li a {
 	color: $accent;
 	font-weight: bold;
-	font-size: 19px;
+	font-size: 17px;
 	text-transform: uppercase;
 	background: transparent;
 	padding: 17px 0 18px 46px;
@@ -1090,6 +1094,9 @@ h3{
 	-webkit-transition: all 0.25s;
 	-o-transition: all 0.25s;
 	transition: all 0.25s;
+	@media (max-width: 400px) {
+		font-size: 15px;
+	}
 }
 .list li:hover {
 	color: #ffffff;
@@ -1143,6 +1150,7 @@ h3{
 	font-size: 30px;
 	text-transform: uppercase;
 	transition: all 0.25s;
+	line-height: 1.2;
 }
 .galery .thumbnail .caption a:hover {
 	color: $accent;
@@ -1197,7 +1205,7 @@ h3{
 		text-transform: uppercase;
 		color: #ffffff;
 		transition: all 0.35s;
-		width: 130px;
+		width: 180px;
 		height: 70px;
 		border: none;
 		@media (max-width: 992px) {
@@ -1205,7 +1213,7 @@ h3{
 			height: 50px;
 		}
 		&:hover{
-			background: #fc5a0a;
+			background: $accent;
 		}
 	}
 }
@@ -1482,4 +1490,13 @@ h3{
 
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
 	background-color: $accent;
+}
+
+.page-box--galery-wrapper{
+	@media (max-width: 992px) {
+		margin-bottom: 10px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
 }
