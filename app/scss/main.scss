@@ -845,9 +845,16 @@ h2{
 
 .brands{
 	margin-bottom: 70px;
+	.container{
+		position: relative;
+	}
 }
 
 .brands-slider {
+	&__item-wrapper{
+		display: flex !important;
+		justify-content: center !important;
+	}
 	&__item{
 		display: inline-block;
 		margin-top: 1px;
@@ -870,6 +877,27 @@ h2{
 		}
 	}
 }
+
+.brands-slider__dot {
+	font-size: 40px;
+	cursor: pointer;
+	color: $accent;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	@media (max-width: 640px) {
+		display: none !important;
+	}
+}
+
+.brands-slider__dot--prev{
+	left: 0;
+}
+
+.brands-slider__dot--next{
+	right: 0;
+}
+
 
 .footer{
 	.row{

@@ -57,12 +57,32 @@ $(function() {
     });
 
 
-    $('.infiniteslide').infiniteslide({
-        'speed': 100, //速さ　単位はpx/秒です。
-        'direction': 'left', //up/down/left/rightから選択
-        'pauseonhover': true, //マウスオーバーでストップ
-        'responsive': false, //子要素の幅を%で指定しているとき
-        'clone': 1 //子要素の複製回数
+    $("#brands-slider").slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow: '.brands-slider__dot--prev',
+        nextArrow: '.brands-slider__dot--next',
+        loop: true,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        pauseOnDotsHover: false,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 540,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+        ]
     });
 
 
@@ -106,7 +126,7 @@ $(function() {
 
 
 $(document).ready(function () {
-
+    //mainSlider
     var dragging = true;
     var owlElementID = "#owl-main";
 

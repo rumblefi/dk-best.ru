@@ -47,8 +47,8 @@ gulp.task('js', function() {
         'app/libs/inputmask/dist/jquery.inputmask.bundle.js',
         'app/libs/inputmask/dist/inputmask/phone-codes/phone.js',
         'app/libs/inputmask/dist/inputmask/phone-codes/phone-ru.js',
-        'app/libs/infiniteslidev2-master/infiniteslidev2.js',
         'app/libs/select2/dist/js/select2.full.min.js',
+        'app/libs/slick-carousel/slick/slick.min.js',
         'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
