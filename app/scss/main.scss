@@ -234,15 +234,15 @@ h2{
 	}
 	.title{
 		text-transform: uppercase ;
-		font-size: 83px ;
-		line-height: 76px ;
+		font-size: 70px ;
 		font-weight: bold ;
 		margin-bottom: 5px ;
+		line-height: 1.1;
 		@media (max-width: 768px) {
 			width: 100%;
 		}
 		@media (max-width: 576px) {
-			font-size: 70px;
+			font-size: 60px;
 		}
 		@media (max-width: 510px) {
 			font-size: 40px;
@@ -253,16 +253,16 @@ h2{
 		}
 	}
 	.description{
-		font-size: 55px ;
+		font-size: 45px ;
 		text-transform: uppercase ;
 		margin-bottom: 13px ;
 		letter-spacing: -1px ;
-		line-height: 58px ;
+		line-height: 1.2;
 		@media (max-width: 576px) {
-			font-size: 40px;
+			font-size: 30px;
 		}
 		@media (max-width: 510px) {
-			font-size: 30px;
+			font-size: 25px;
 		}
 		@media (max-width: 390px) {
 			font-size: 21px;
@@ -554,7 +554,7 @@ h2{
 .services .box .title,
 .working-directions .box .title{
 	font-weight: bold;
-	font-size: 55px;
+	font-size: 45px;
 	text-transform: uppercase;
 	color: #ffffff;
 	margin-bottom: 10px;
@@ -622,6 +622,7 @@ h2{
 	padding: 50px 0;
 	background-size: cover;
 	background-position: center center;
+	height: 1px;
 	&--galery{
 		min-height: 500px;
 		@media (max-width: 992px) {
