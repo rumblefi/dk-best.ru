@@ -95,9 +95,7 @@ $(function() {
     });
 
     //кастомный селект
-    $( '#city' ).dropdown( {
-        gutter : 40
-    } );
+    $(".popup-form__select").select2();
 
 
     $(".popup-form__phone").inputmask('(99) 9999[9]-9999');

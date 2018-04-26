@@ -44,12 +44,11 @@ gulp.task('js', function() {
 		'app/libs/jquery.easing/jquery.easing.js',
 		'app/libs/owl.carousel/owl.carousel.js',
 		'app/libs/magnific-popup/dist/jquery.magnific-popup.js',
-		'app/libs/SimpleDropDownEffects/js/modernizr.custom.63321.js',
-		'app/libs/SimpleDropDownEffects/js/jquery.dropdown.js',
         'app/libs/inputmask/dist/jquery.inputmask.bundle.js',
         'app/libs/inputmask/dist/inputmask/phone-codes/phone.js',
         'app/libs/inputmask/dist/inputmask/phone-codes/phone-ru.js',
         'app/libs/infiniteslidev2-master/infiniteslidev2.js',
+        'app/libs/select2/dist/js/select2.full.min.js',
         'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
