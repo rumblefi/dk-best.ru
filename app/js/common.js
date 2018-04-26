@@ -206,8 +206,7 @@ $(document).ready(function () {
     }
 
     $(owlElementID).owlCarousel({
-        // autoPlay: 5000,
-        autoPlay: false,
+        autoPlay: 5000,
         stopOnHover: false,
         navigation: false,
         pagination: true,

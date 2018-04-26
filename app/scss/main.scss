@@ -702,17 +702,20 @@ h2{
 	text-transform: uppercase;
 }
 
+.owl-carousel .owl-item {
+	min-height: 650px;
+	height: 1px;
+	@media (max-width: 992px) {
+		min-height: 630px;
+	}
+}
 
 #owl-main {
 	.item {
-		min-height: 640px;
-		height: 1px;
+		height: 100%;
 		background-color: #FFF;
 		background-size: cover;
 		background-position: center center;
-		@media (max-width: 992px) {
-			min-height: 620px;
-		}
 	}
 	.container {
 		height: 100%;
