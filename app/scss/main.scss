@@ -232,41 +232,20 @@ h2{
 		text-transform: uppercase ;
 		font-size: 70px ;
 		font-weight: bold ;
-		margin-bottom: 5px ;
 		line-height: 1.1;
-		@media (max-width: 768px) {
-			width: 100%;
-		}
-		@media (max-width: 576px) {
-			font-size: 65px;
-		}
-		@media (max-width: 510px) {
-			font-size: 58px;
-		}
-		@media (max-width: 390px) {
-			font-size: 45px;
-		}
+		margin-bottom: 25px;
 	}
 	.description{
-		font-size: 45px ;
-		text-transform: uppercase ;
+		font-size: 24px ;
 		margin-bottom: 13px ;
 		letter-spacing: -1px ;
 		line-height: 1.2;
-		@media (max-width: 576px) {
-			font-size: 35px;
-		}
-		@media (max-width: 510px) {
-			font-size: 30px;
-		}
-		@media (max-width: 390px) {
-			font-size: 25px;
-		}
 	}
 	.text{
+		font-size: 18px;
 		width: 75% ;
 		@media (max-width: 510px) {
-			font-size: 14px;
+			font-size: 18px;
 			width: 95%;
 		}
 	}
@@ -525,6 +504,11 @@ h2{
 		padding-right: 20px;
 	}
 }
+
+.working-directions .box {
+	border: 4px solid $accent;
+}
+
 .services .box em,
 .working-directions .box em{
 	position: absolute;
@@ -705,6 +689,11 @@ h2{
 .owl-carousel .owl-item {
 	min-height: 650px;
 	height: 1px;
+	&:last-child {
+		.title{
+			font-size: 52px;
+		}
+	}
 	@media (max-width: 992px) {
 		min-height: 630px;
 	}
@@ -722,7 +711,7 @@ h2{
 	}
 	.row{
 		height: 100%;
-		padding: 50px 0;
+		padding: 100px 0;
 		@media (max-width: 992px) {
 			justify-content: center;
 			padding: 70px 0;
@@ -910,7 +899,7 @@ h2{
 
 .footer{
 	.row{
-		align-items: center;
+		align-items: flex-start;
 		@media (max-width: 992px) {
 			flex-direction: column;
 		}
@@ -929,6 +918,11 @@ h2{
 }
 
 .footer-top__menu{
+	.header-top-menu__phone{
+		&:before{
+			font-size: 33px;
+		}
+	}
 	@media (max-width: 992px) {
 		text-align: center;
 		margin-bottom: 40px;
@@ -1502,4 +1496,21 @@ h3{
 			margin-bottom: 0;
 		}
 	}
+}
+
+.header-top-text__title {
+	text-transform: uppercase;
+	font-size: 24px;
+}
+
+.header-top-text__tagline {
+	line-height: 1.2;
+}
+
+.paralax-section--directions {
+	padding: 0;
+}
+
+.paralax-section .heading{
+	color: #ffffff;
 }
