@@ -79,6 +79,8 @@ h2{
 
 //custom
 .logo{
+	display: flex;
+	align-items: center;
 	outline: 0;
 	@media (max-width: 992px) {
 		margin-bottom: 10px;
@@ -1498,9 +1500,13 @@ h3{
 	}
 }
 
+.header-top-text {
+	margin-left: 15px;
+}
+
 .header-top-text__title {
 	text-transform: uppercase;
-	font-size: 24px;
+	font-size: 27px;
 }
 
 .header-top-text__tagline {
